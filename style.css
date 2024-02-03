@@ -4,6 +4,10 @@ html, body{
     font-family: Poppins, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: white;
 }
+#logo{
+    height: 55%;
+    padding-right: 10px;
+}
 p{
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ p{
 #container{
     background-color: antiquewhite;
     display: grid;
-    grid-template-rows: 2fr 11fr;
+    grid-template-rows: 15% 85%;
     height: 100vh;
 }
 #top{
