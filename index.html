@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="backend.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <p id="hOne">Book</p>
+            <p id="hTwo">Spot</p>
+        </div>
+        <div id="library">
+            <div id="newBook">
+                <button id="add"></button>
+            </div>
+            <div class="book" id="template">
+                    <h2 class="bookTitle">Harry Potter and The Philosopher's Stone</h2>
+                    <h3 class="bookAuthor">J.K Rowling</h3>
+                <div class="middlePart">
+                    <h5>Page count:</h5>
+                    <h5 class="bookPages">352</h5>
+                </div>
+                <div class="options">
+                    <button class="bookRead" data-value="unread"></button>
+                    <button class="bookDelete" data-value="template"></button>
+                    <button class="bookCover" data-value="template"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div id="modalContainer">
+            <div class="modal-content">
+              <div class="bgWhite">
+                    <span class="close">&times;</span>
+                    <form action="post" id="form">
+                        <label for="title" >Title</label>
+                        <input type="text" required id="title">
+                        <label for="author">Author</label>
+                        <input type="text" required id="author">
+                        <label for="pages">Page count</label>
+                        <input type="number" required id="pages">
+                        <label for="cover">Cover</label>
+                        <textarea name="cover" required id="cover" cols="30" rows="10"></textarea>
+                        <div id="submitModal">
+                            <label for="read">I have read this book</label>
+                            <input type="checkbox" name="read" id="read">
+                            <input type="submit" value="Add" id="submit">
+                        </div>
+                    </form>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myCover" class="modal">
+        <div id="coverContainer">
+            <div id="coverContent">
+              <div id="coverBG">
+                    <span class="close" id="closeCover">&times;</span>
+                    <p id="coverText">Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry. 
+                    <br> 
+                    After a lifetime of bottling up his magical powers, Harry finally feels like a normal kid. But even within the Wizarding community, he is special. He is the boy who lived: the only person to have ever survived a killing curse inflicted by the evil Lord Voldemort, who launched a brutal takeover of the Wizarding world, only to vanish after failing to kill Harry.
+                    <br>
+                    Though Harry's first year at Hogwarts is the best of his life, not everything is perfect. There is a dangerous secret object hidden within the castle walls, and Harry believes it's his responsibility to prevent it from falling into evil hands. But doing so will bring him into contact with forces more terrifying than he ever could have imagined.
+                    <br>
+                    Full of sympathetic characters, wildly imaginative situations, and countless exciting details, the first installment in the series assembles an unforgettable magical world and sets the stage for many high-stakes adventures to come.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
